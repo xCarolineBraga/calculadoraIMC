@@ -3,7 +3,15 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="primary_400">#cd00ea</color>
-    <color name="primary_900">#5c00d2</color>
+    <color name="primary_400">#C71585</color>
+    <color name="primary_900">#FF6347</color>
+
+    <color name="MAGREZA">#FFD700</color>
+    <color name="ABAIXO_DO_PESO">#808000</color>
+    <color name="NORMAL">#6B8E23</color>
+    <color name="SOBREPESO">#FF8C00</color>
+    <color name="OBESIDADE_I">#FF4500</color>
+    <color name="OBESIDADE_II">#FF0000</color>
+    <color name="OBESIDADE_MORBIDA">#8B0000</color>
 
 </resources>

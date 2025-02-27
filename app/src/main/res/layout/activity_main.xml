@@ -6,6 +6,48 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:id="@+id/vg_header"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/gradiente_bg"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:src="@drawable/ic_monitor"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="Calculadora IMC"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="70dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:text="Preencha todos os campos para calcular seu índice de massa corporal."/>
+
+    </LinearLayout>
+
 
     <Button
         android:id="@+id/btn_calcular"
@@ -25,17 +67,17 @@
         app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/vg_header">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edt_peso"
-            android:drawableEnd="@drawable/icc_weight"
-            android:maxLength="6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_bg"
+            android:drawableEnd="@drawable/icc_weight"
             android:hint="Digite seu peso ex: 70.200"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:maxLength="6" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
